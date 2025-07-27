@@ -1,0 +1,39 @@
+# =============================
+# Core Django + REST Framework
+# =============================
+Django>=4.0
+djangorestframework
+
+# =============================
+# Environment Variable Support
+# =============================
+python-dotenv
+
+# =============================
+# JWT Support
+# =============================
+PyJWT
+
+# =============================
+# Testing (Optional)
+# =============================
+pytest
+pytest-django
+
+# =============================
+# Logging (Optional, for better control)
+# =============================
+# You can configure built-in logging with Python
+# If needed, add advanced logging libraries like:
+# loguru
+
+# =============================
+# Database
+# =============================
+# SQLite is built-in; no external package needed
+
+# =============================
+# Linting / Formatting (Optional)
+# =============================
+# black
+# flake8

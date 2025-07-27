@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +22,31 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-g!gkt%ym_j0#2g&%$0f*8@r0@i!1!3l4==8zgk8#bp_m%0pm6f'
+# SECRET_KEY = 'django-insecure-g!gkt%ym_j0#2g&%$0f*8@r0@i!1!3l4==8zgk8#bp_m%0pm6f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+APPEND_SLASH = False
+
+
+
+
+
+SECRET_KEY = config('SECRET_KEY')
+JWT_SECRET = config('JWT_SECRET')
+
+AUTH_USER_MODEL = 'user.User'
+JWT_SECRET = os.getenv('JWT_SECRET', 'SECRET_KEY')
+
+print(f"JWT_SECRET1 = {JWT_SECRET}")
+
+
+
+
+
 
 
 # Application definition
@@ -37,6 +58,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'user',
 ]
 
 MIDDLEWARE = [

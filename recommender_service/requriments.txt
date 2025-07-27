@@ -3,3 +3,10 @@ backports.zoneinfo==0.2.1
 django==4.2.23
 sqlparse==0.5.3
 typing-extensions==4.13.2
+wheel
+
+pandas
+gunicorn
+whitenoise
+fastparquet
+pyarrow
