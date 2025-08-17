@@ -31,7 +31,8 @@ movie-recommender/
 
 ## ⚡ Getting Started
 1. Clone the repo  
-   git clone https://github.com/your-username/movie-recommender.git  
+   git clone https://github.com/ankulmaurya88/movie-recommendation-system
+.git  
 
 2. Navigate to project directory  
    cd movie-recommender  
