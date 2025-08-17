@@ -11,14 +11,15 @@ A microservices-based Movie Recommendation System that combines **Collaborative 
 - Wrote **unit tests** and validated recommendation logic for accuracy
 - Documented APIs and architecture for maintainability & scaling
 
-## 🛠️ Tech Stack
-- **Backend:** Django, Python
+## 🧱 Tech Stack
+- **Backend:** Python, Django, Django REST Framework
 - **Frontend:** HTML, CSS, JavaScript
-- **Database:** PostgreSQL / MySQL
-- **Architecture:** Microservices
-- **Testing:** Pytest
+- **Data/Store:** PostgreSQL (or SQLite for dev)
+- **Containerization:** Docker, docker-compose
+- **Testing:** pytest
 
 ## 📂 Project Structure
+``` bash
 movie-recommender/
 ├── user_service/        # Handles user registration & profiles
 ├── rating_service/      # Manages user ratings
@@ -26,6 +27,7 @@ movie-recommender/
 ├── frontend/            # HTML, CSS, JS UI
 ├── tests/               # Unit tests
 └── docs/                # Documentation
+```
 
 ## ⚡ Getting Started
 1. Clone the repo  
